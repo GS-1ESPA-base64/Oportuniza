@@ -8,7 +8,7 @@ function slideShow(direction) {
   if (direction === 'left') {
     i--;
   } else if (direction === 'right') {
-    i += 2;
+    i++;
   } else {
     i++;
   }
@@ -28,5 +28,5 @@ slideShow()
 
 
 function confirma(){
-Swal.fire('Recomendação enviada!', 'Candidatura enviada!.', 'success')
+Swal.fire('Interesse manifestado!', 'Candidatura realizada!', 'success')
 }
