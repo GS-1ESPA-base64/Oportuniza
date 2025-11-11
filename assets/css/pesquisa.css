@@ -1,0 +1,73 @@
+@import url("./style.css");
+
+
+#container {
+
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 68, 170, 0.15);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+#container:hover {
+  transform: translateY(-3px);
+}
+
+/* Pergunta */
+#pergunta {
+  font-size: 1.4rem;
+  color: #0044aa;
+  margin-bottom: 1.5rem;
+}
+
+#txtInput {
+  width: 80%;
+  padding: 0.8rem;
+  border: 2px solid #1e64e0;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#txtInput:focus {
+  border-color: #0044aa;
+}
+
+#inputResposta button {
+  background-color: #1e64e0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#inputResposta button:hover {
+  background-color: #0044aa;
+  transform: scale(1.05);
+}
+
+#inputResposta {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+strong {
+  color: #0044aa;
+}
+
+#container,
+#pergunta,
+#inputResposta {
+  transition: all 0.4s ease-in-out;
+}

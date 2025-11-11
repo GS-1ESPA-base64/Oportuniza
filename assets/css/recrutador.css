@@ -10,7 +10,6 @@
   color: #0044aa;
 }
 
-/* === CARDS === */
 .cards-container {
   display: flex;
   justify-content: center;
@@ -52,7 +51,6 @@
   font-size: 0.9rem;
 }
 
-/* === SLIDES === */
 .slide-section {
   display: flex;
   justify-content: center;
@@ -107,7 +105,7 @@
   right: 10px;
 }
 
-/* BOTÕES DE AÇÃO */
+
 .acoes {
   margin-top: 1rem;
   display: flex;

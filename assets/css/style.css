@@ -30,8 +30,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #002b80;
+  color: #0056ff;
   text-decoration: underline;
+}
+main {
+  flex: 1;
 }
 .banner {
   display: flex;
@@ -70,7 +73,7 @@ nav ul li a:hover {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .btn-nav:hover {
-  background-color: #0074ff;
+  background-color: #0056ff;
   transform: translateY(-50%) scale(1.1);
 }
 
@@ -96,6 +99,11 @@ h2, p {
 }
 
 .tabela-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
   margin: 2rem auto;
   max-width: 1100px;
 }
+

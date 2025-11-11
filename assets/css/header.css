@@ -29,7 +29,7 @@ header {
 
 .logo-container h1 {
   font-size: 1.4rem;
-  color: #0044aa;
+  color: #0056ff;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -46,12 +46,12 @@ header {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  color: #0044aa;
+  color: #0056ff;
   transition: color 0.3s ease, border-bottom 0.3s ease;
   padding-bottom: 4px;
 }
 
 .nav-links a:hover {
-  color: #0074ff;
+  color: #0056ff;
   border-bottom: 2px solid #0074ff;
 }

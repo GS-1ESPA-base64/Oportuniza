@@ -25,3 +25,8 @@ function slideShow(direction) {
 
 timer = setTimeout(slideShow, tempo);
 slideShow()
+
+
+function confirma(){
+Swal.fire('Recomendação enviada!', 'Candidatura enviada!.', 'success')
+}

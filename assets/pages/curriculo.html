@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monte seu Currículo | Oportuniza</title>
+  <link rel="stylesheet" href="../css/curriculo.css">
 </head>
 <body>
-    <footer class="footer">
-  <p>© 2025 Oportuniza</p>
-</footer>
+  <header>
+      <nav class="navbar">
+    <a href="../../index.html" class="link-container">
+      <div class="logo-container">
+        <img src="../imgs/maleta.png" alt="Logo Oportuniza" class="logo">
+        <h1>Oportuniza</h1>
+    </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="./vagas.html">Vagas</a></li>
+        <li><a href="./curriculo.html">Meu Currículo</a></li>
+        <li><a href="./recrutador.html">Recrutar</a></li>
+        <li><a href="./pesquisa.html">Pesquisa</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <div id="container">
+    <h2 id="pergunta">Qual é o seu nome completo?</h2>
+    <div id="inputResposta">
+      <input type="text" id="txtInput" placeholder="Digite aqui...">
+      <button onclick="trocaPergunta()">Enviar</button>
+    </div>
+  </div>
+  </main>
+
+  <footer class="footer-min">
+    <p>© 2025 Oportuniza</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/curriculo.js"></script>
 </body>
 </html>

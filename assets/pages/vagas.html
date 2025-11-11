@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/vagas.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <header>
+   <header>
   <nav class="navbar">
-    <div class="logo-container">
-      <img src="../imgs/maleta.png" alt="Logo Oportuniza" class="logo">
-      <h1>Oportuniza</h1>
+    <a href="../../index.html" class="link-container">
+      <div class="logo-container">
+        <img src="../imgs/maleta.png" alt="Logo Oportuniza" class="logo">
+        <h1>Oportuniza</h1>
     </div>
-
     <ul class="nav-links">
       <li><a href="../../index.html">Home</a></li>
       <li><a href="./vagas.html">Vagas</a></li>
       <li><a href="./curriculo.html">Meu Currículo</a></li>
+      <li><a href="./recrutador.html">recrutar</a></li>
+      <li><a href="./pesquisa.html">pesquisa</a></li>
     </ul>
   </nav>
 </header>
@@ -26,21 +29,22 @@
     <td class="categoria">
       <h3>Desenvolvedor Front-End</h3>
       <p>Cria interfaces modernas e intuitivas. Responsável por transformar o design em código funcional, garantindo boa experiência ao usuário.</p>
-      <button class="btn-interesse"><a href="./envio.html" class="link-container">Me interessei</a></button>
-
+        <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
     <td class="categoria">
       <h3>Analista de Dados</h3>
       <p>Coleta, organiza e interpreta grandes volumes de informações para apoiar decisões estratégicas da empresa.</p>
-    
+      <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
     <td class="categoria">
       <h3>Especialista em Cibersegurança</h3>
       <p>Protege sistemas e informações contra ameaças digitais, implementando políticas de segurança e respostas a incidentes.</p>
+      <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
     <td class="categoria">
       <h3>Coordenador de Marketing</h3>
       <p>Planeja campanhas, analisa métricas e lidera estratégias para fortalecer a presença da marca no mercado.</p>
+      <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
   </tr>
 
@@ -48,18 +52,22 @@
     <td class="categoria">
       <h3>Engenheiro de Software</h3>
       <p>Desenvolve sistemas complexos, cria soluções escaláveis e trabalha com arquitetura e integração de aplicações.</p>
+      <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
     <td class="categoria">
       <h3>Gerente de Projetos</h3>
       <p>Coordena equipes multidisciplinares, define metas e prazos e assegura a entrega de resultados com qualidade.</p>
+      <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
     <td class="categoria">
       <h3>Recursos Humanos</h3>
       <p>Cuida do recrutamento, integração e desenvolvimento de talentos, promovendo um ambiente de trabalho saudável.</p>
+      <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
     <td class="categoria">
       <h3>Designer UX/UI</h3>
       <p>Desenha experiências centradas no usuário, combinando estética, funcionalidade e acessibilidade nas interfaces.</p>
+      <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
   </tr>
 
@@ -67,21 +75,26 @@
     <td class="categoria">
       <h3>Contador</h3>
       <p>Gerencia as finanças, balanços e obrigações fiscais, garantindo conformidade e transparência nos números da empresa.</p>
+    <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
     <td class="categoria">
       <h3>Técnico em Suporte</h3>
       <p>Presta assistência técnica a usuários e mantém o bom funcionamento dos equipamentos e sistemas corporativos.</p>
+    <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
     <td class="categoria">
       <h3>Analista Logístico</h3>
       <p>Supervisiona o fluxo de produtos, otimizando processos de transporte, armazenamento e distribuição.</p>
+    <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
     <td class="categoria">
       <h3>Atendimento ao Cliente</h3>
       <p>Interage diretamente com os clientes, solucionando dúvidas e fortalecendo o relacionamento com a marca.</p>
+   <button class="btn-interesse" onclick="confirma()">Me interessei</button>
     </td>
   </tr>
 </table>
+<script src="../js/vagas.js"></script>
 <footer class="footer">
   <p>© 2025 Oportuniza</p>
 </footer>
