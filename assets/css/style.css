@@ -6,11 +6,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}body {
+}
+
+body {
   background-color: #f5f7fb;
   color: #222;
   text-align: center;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 nav ul {
@@ -25,6 +27,7 @@ nav ul li a {
   text-decoration: none;
   color: #0056ff;
   font-weight: 500;
+    white-space: nowrap;
   transition: 0.3s;
 }
 
