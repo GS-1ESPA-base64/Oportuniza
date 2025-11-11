@@ -1,0 +1,98 @@
+@import url("./style.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f8ff;
+  color: #111;
+  margin: 0;
+  padding: 2rem;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+.texto-destaque {
+  background-color: #fff;
+  padding: 1.5rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  border-left: 5px solid #0074ff; 
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.texto-destaque h2 {
+  color: #0044aa;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.texto-destaque p {
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.tabela-categorias {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1.5rem;
+  text-align: left;
+}
+
+.categoria {
+  background-color: #ffffff;
+  border: 2px solid #0074ff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  vertical-align: top;
+  box-shadow: 0 4px 10px rgba(0, 50, 150, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  width: 22%;
+}
+
+.categoria:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 70, 180, 0.25);
+  border-color: #0044aa;
+}
+
+.categoria h3 {
+  color: #0044aa;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.categoria p {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.link-container {
+  text-decoration: none;
+  color: inherit;
+}
+.btn-interesse {
+  background-color: #0074ff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.btn-interesse:hover {
+  background-color: #0044aa;
+  transform: scale(1.05);
+}

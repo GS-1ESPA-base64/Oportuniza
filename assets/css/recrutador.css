@@ -1,0 +1,131 @@
+@import url("./style.css");
+
+
+.intro {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.intro h2 {
+  color: #0044aa;
+}
+
+/* === CARDS === */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #0074ff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 80, 0.1);
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 70, 180, 0.2);
+}
+
+.foto-perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cargo {
+  font-weight: 600;
+  color: #0044aa;
+}
+
+.skills {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+/* === SLIDES === */
+.slide-section {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.slide-container {
+  position: relative;
+  background: #fff;
+  border: 2px solid #0074ff;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 800px;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 50, 150, 0.15);
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.btn-slide {
+  position: absolute;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 68, 170, 0.7);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-slide:hover {
+  background-color: #0074ff;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+/* BOTÕES DE AÇÃO */
+.acoes {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-acao {
+  background-color: #0074ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-acao:hover {
+  background-color: #0044aa;
+  transform: scale(1.05);
+}

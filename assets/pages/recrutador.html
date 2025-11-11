@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oportuniza | Recrutadores</title>
+  <link rel="stylesheet" href="../css/recrutador.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="../imgs/maleta.png" alt="Logo Oportuniza" class="logo">
+        <h1>Oportuniza</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="./vagas.html">Vagas</a></li>
+        <li><a href="./curriculo.html">Meu Currículo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Recrutadores</h2>
+      <p>Encontre profissionais qualificados, veja seus perfis e descubra quem pode ser o próximo talento da sua equipe.</p>
+    </section>
+
+    <!-- === CARDS DE PROFISSIONAIS === -->
+    <section class="cards-container">
+      <div class="card">
+        <img src="../imgs/ana.png" alt="Foto do profissional" class="foto-perfil">
+        <h3>Ana Souza</h3>
+        <p class="cargo">Desenvolvedora Front-End</p>
+        <p class="skills">HTML • CSS • JavaScript • React</p>
+      </div>
+
+      <div class="card">
+        <img src="../imgs/Lucas.png" alt="Foto do profissional" class="foto-perfil">
+        <h3>Lucas Oliveira</h3>
+        <p class="cargo">Analista de Dados</p>
+        <p class="skills">Python • SQL • Power BI • Excel</p>
+      </div>
+
+      <div class="card">
+        <img src="../imgs/Mariana.png" alt="Foto do profissional" class="foto-perfil">
+        <h3>Mariana Santos</h3>
+        <p class="cargo">UX/UI Designer</p>
+        <p class="skills">Figma • UX Research • Prototipagem</p>
+      </div>
+    </section>
+
+    <!-- === SLIDESHOW DE DETALHES === -->
+    <section class="slide-section">
+  <div class="slide-container">
+    <button class="btn-slide left" onclick="mudarSlide('left')">&#8249;</button>
+
+    <div id="slideConteudo" class="slide-conteudo">
+      <h3>👩‍💻 Ana Souza</h3>
+      <p><strong>Formação:</strong> Análise e Desenvolvimento de Sistemas - FIAP</p>
+      <p><strong>Experiências:</strong> 2 anos como Front-End na TechNova</p>
+      <p><strong>Habilidades Técnicas:</strong> React, JavaScript, Git, UI responsiva</p>
+      <p><strong>Soft Skills:</strong> Trabalho em equipe, adaptabilidade</p>
+      <p><strong>Hobbies:</strong> Design gráfico e ilustração digital</p>
+      <div class="acoes">
+        <button class="btn-acao">Recomendar profissional</button>
+        <button class="btn-acao">Enviar mensagem</button>
+      </div>
+    </div>
+
+    <button class="btn-slide right" onclick="mudarSlide('right')">&#8250;</button>
+  </div>
+</section>
+  </main>
+
+  <script src="../js/recrut.js"></script>
+  <footer class="footer">
+  <p>© 2025 Oportuniza</p>
+</footer>
+</body>
+</html>
