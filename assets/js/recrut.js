@@ -51,7 +51,7 @@ function mudarSlide(direction) {
     <p><strong>Hobbies:</strong> ${p.hobbies}</p>
     <div class="acoes">
       <button class="btn-acao" onclick="Swal.fire('Recomendação enviada!', 'Você recomendou este profissional com sucesso!', 'success')">Recomendar profissional</button>
-      <button class="btn-acao" onclick="Swal.fire('Recomendação enviada!', 'você enviou uma mensagem para este profissional!', 'info')">Enviar mensagem</button>
+      <button class="btn-acao" onclick="Swal.fire('Mensagem enviada!', 'você enviou uma mensagem para este profissional!', 'info')">Enviar mensagem</button>
     </div>
   `;
 
