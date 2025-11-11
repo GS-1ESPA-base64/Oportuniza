@@ -1,14 +1,14 @@
 @import url("./style.css");
 @import url("footer.css");
 html, body {
-  height: 100%;            /* faz o body ocupar toda a tela */
+  height: 100%;           
   margin: 0;
   padding: 0;
 }
 
 body {
   display: flex;
-  flex-direction: column;  /* organiza o conteúdo e o footer verticalmente */
+  flex-direction: column;  
   background-color: #f5f7fb;
   color: #222;
   text-align: center;
