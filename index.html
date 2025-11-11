@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oportuniza</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="./assets/imgs/maleta.png" alt="Logo Oportuniza" class="logo">
+      <h1>Oportuniza</h1>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./assets/pages/vagas.html">Vagas</a></li>
+      <li><a href="./assets/pages/curriculo.html">Meu Currículo</a></li>
+      <li><a href="./assets/pages/recrutador.html">Recrutar</a></li>
+      <li><a href="./assets/pages/pesquisa.html">Pesquisa</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+        <div class="banner-container">
+  <button class="btn-nav left-btn" onclick="slideShow('left')">&#8249;</button>
+  
+  <img src="./assets/imgs/banner.png" alt="Banner Oportuniza" class="banner-img" id="imgBanner">
+  
+  <button class="btn-nav right-btn" onclick="slideShow('right')">&#8250;</button>
+</div>
+        <p>seu site de realocacao profissional!</p>
+    
+    <p>    confira mais oportunidades clicando em <a href="./assets/pages/vagas.html">vagas</a>
+</p>
+<table class="tabela-categorias">
+  <tr>
+    <td class="categoria">
+      <h3>💻 Desenvolvedor Full Stack</h3>
+      <p>Profissional versátil que atua no front-end e no back-end, construindo aplicações completas e integradas do zero.</p>
+      <button class="btn-interesse" onclick="confirma()">Me interessei</button>
+    </td>
+    <td class="categoria">
+      <h3>📊 Analista de Marketing Digital</h3>
+      <p>Cria estratégias online, gerencia redes sociais e campanhas pagas, analisando métricas para aumentar resultados.</p>
+<button class="btn-interesse" onclick="confirma()">Me interessei</button>
+    </td>
+    <td class="categoria">
+      <h3>🤝 Consultor de RH</h3>
+      <p>Atua na gestão de pessoas, recrutamento e desenvolvimento de talentos, promovendo um ambiente de trabalho produtivo.</p>
+     <button class="btn-interesse" onclick="confirma()">Me interessei</button>
+
+    </td>
+  </tr>
+</table>
+</main>
+    <script src="./assets/js/script.js"></script>
+<footer class="footer">
+  <p>© 2025 Oportuniza</p>
+</footer>
+
+</body>
+</html>
