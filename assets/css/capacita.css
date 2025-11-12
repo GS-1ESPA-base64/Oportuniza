@@ -1,0 +1,77 @@
+@import url("./style.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f8ff;
+  color: #111;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Container principal */
+.cursos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 40px;
+  background-color: #f4f8ff;
+}
+
+/* Cartão do curso */
+.curso {
+  background-color: #fff;
+  border: 2px solid #0056ff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 50, 150, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.curso:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 70, 180, 0.2);
+  border-color: #0056ff;
+}
+
+/* Título do curso */
+.curso h3 {
+  font-size: 1.2rem;
+  color: #0056ff;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Tempo de duração */
+.curso .tempo {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 12px;
+}
+
+/* Descrição */
+.curso p {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Botão */
+.btn-inscricao {
+  display: inline-block;
+  background-color: #0056ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-inscricao:hover {
+  background-color: #003fcc;
+  transform: scale(1.05);
+}
