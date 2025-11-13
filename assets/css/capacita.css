@@ -7,10 +7,10 @@ body {
   color: #111;
   margin: 0;
   padding: 2rem;
-  padding: 0 20px 20px 20px;
+  padding: 0 0 2rem 0;
 }
 
-/* Container principal */
+
 .cursos-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -19,7 +19,7 @@ body {
   background-color: #f4f8ff;
 }
 
-/* Cartão do curso */
+
 .curso {
   background-color: #eae8dc;
   border: 2px solid #564e43;
@@ -35,7 +35,7 @@ body {
   border-color: #564e43;
 }
 
-/* Título do curso */
+
 .curso h3 {
   font-size: 1.2rem;
   color: #564e43;
@@ -43,14 +43,13 @@ body {
   font-weight: 600;
 }
 
-/* Tempo de duração */
+
 .curso .tempo {
   font-size: 0.9rem;
   color: #6c757d;
   margin-bottom: 12px;
 }
 
-/* Descrição */
 .curso p {
   color: #333;
   font-size: 0.95rem;

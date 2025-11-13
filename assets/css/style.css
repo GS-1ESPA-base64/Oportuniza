@@ -12,46 +12,7 @@ body {
   background-color: #eae8dc;
   color: #222;
   text-align: center;
-  padding: 0;
-}
-nav ul {
-  list-style: none;
-  display: inline-flex;
-  justify-content: center;
-  gap: 25px;
-  margin-bottom: 25px;
-  padding: 0;
-}
-
-
-nav ul li a {
-  position: relative;
-  display: inline-block;
-  color: #eae8dc;
-  font-weight: 500;
-  white-space: nowrap;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-
-nav ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background-color: eae8dc;
-  transition: width 0.5s ease;
-}
-
-nav ul li a:hover {
-  color: #eae8dc;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
+  padding: 0 0 2rem 0;
 }
 main {
   flex: 1;
@@ -129,3 +90,37 @@ h2, p {
   max-width: 1100px;
 }
 
+.outrosProjetos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 3rem auto;
+  max-width: 1000px;
+}
+
+.cardProjeto {
+  background-color: #564e43; 
+  padding: 2rem 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.cardProjeto:hover {
+  transform: translateY(-4px);
+}
+
+.cardProjeto img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1); 
+}
+
+.cardProjeto p {
+  color: #f4f2e8; 
+  font-size: 0.95rem;
+  font-weight: 500;
+}

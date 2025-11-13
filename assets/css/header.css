@@ -70,7 +70,7 @@ header {
   font-size: 1rem;
 }
 
-/* AÇÕES À DIREITA (ENTRAR + HAMBÚRGUER) */
+
 .menu-actions {
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@ header {
 
 }
 
-/* HAMBURGUER */
+
 .hamburger {
   width: 28px;
   display: flex;
@@ -113,6 +113,7 @@ header {
 /* MENU INFERIOR */
 .nav-links {
   list-style: none;
+  color: #eae8dc;
   display: flex;
   gap: 2rem;
   margin: 0;
