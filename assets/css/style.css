@@ -12,7 +12,7 @@ body {
   background-color: #eae8dc;
   color: #222;
   text-align: center;
-  padding: 0 20px 20px 20px;
+  padding: 0;
 }
 nav ul {
   list-style: none;
@@ -34,7 +34,7 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
-/* linha animada */
+
 nav ul li a::after {
   content: "";
   position: absolute;
@@ -84,7 +84,7 @@ main {
  position: absolute;
   top: 50%;                    
   transform: translateY(-50%);  
-  background-color: #0056ff;
+  background-color: #564e43;
   color: white;
   border: none;
   font-size: 2rem;
@@ -95,7 +95,7 @@ main {
   z-index: 10;                   
 }
 .btn-nav:hover {
-  background-color: #0056ff;
+  background-color: #564e43;
   transform: translateY(-50%) scale(1.1);
 }
 

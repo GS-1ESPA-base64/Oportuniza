@@ -51,6 +51,6 @@ function alertaBonito(event) {
     title: "Questionário enviado!",
     text: "Suas respostas foram registradas com sucesso.",
     icon: "success",
-    confirmButtonColor: "#1e64e0"
+    confirmButtonColor: "#564e43"
   });
 }

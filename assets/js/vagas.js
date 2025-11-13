@@ -1,3 +1,7 @@
 function confirma(){
-Swal.fire('Candidatura Enviada!', '', 'success')
-}
+Swal.fire({
+    title: "Candidatura Enviada!",
+    text: "Suas respostas foram registradas com sucesso.",
+    icon: "success",
+    confirmButtonColor: "#564e43"
+  })}

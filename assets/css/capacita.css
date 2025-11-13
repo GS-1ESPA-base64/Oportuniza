@@ -21,8 +21,8 @@ body {
 
 /* Cartão do curso */
 .curso {
-  background-color: #fff;
-  border: 2px solid #0056ff;
+  background-color: #eae8dc;
+  border: 2px solid #564e43;
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0, 50, 150, 0.1);
@@ -32,13 +32,13 @@ body {
 .curso:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 22px rgba(0, 70, 180, 0.2);
-  border-color: #0056ff;
+  border-color: #564e43;
 }
 
 /* Título do curso */
 .curso h3 {
   font-size: 1.2rem;
-  color: #0056ff;
+  color: #564e43;
   margin-bottom: 8px;
   font-weight: 600;
 }
@@ -58,10 +58,10 @@ body {
   margin-bottom: 16px;
 }
 
-/* Botão */
+
 .btn-inscricao {
   display: inline-block;
-  background-color: #0056ff;
+  background-color: #564e43;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -73,6 +73,6 @@ body {
 }
 
 .btn-inscricao:hover {
-  background-color: #003fcc;
+  background-color: #564e43;
   transform: scale(1.05);
 }

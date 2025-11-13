@@ -7,8 +7,8 @@ body {
   background-color: #f4f8ff;
   color: #111;
   margin: 0;
-  padding: 2rem;
-  padding: 0 20px 20px 20px;
+  
+ 
 }
 
 main {
@@ -21,13 +21,13 @@ main {
   padding: 1.5rem;
   max-width: 700px;
   margin: 2rem auto;
-  border-left: 5px solid #0056ff; 
+  border-left: 5px solid #564e43; 
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .texto-destaque h2 {
-  color: #0056ff;
+  color: #564e43;
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
@@ -47,7 +47,7 @@ main {
 
 .categoria {
   background-color: #ffffff;
-  border: 2px solid #0056ff;
+  border: 2px solid #564e43;
   border-radius: 10px;
   padding: 1.5rem;
   vertical-align: top;
@@ -59,11 +59,11 @@ main {
 .categoria:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 70, 180, 0.25);
-  border-color: #0056ff;
+  border-color: #564e43;
 }
 
 .categoria h3 {
-  color: #0056ff;
+  color: #564e43;
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
@@ -81,7 +81,7 @@ main {
   color: inherit;
 }
 .btn-interesse {
-  background-color: #0056ff;
+  background-color: #564e43;
   color: #fff;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -94,6 +94,6 @@ main {
 }
 
 .btn-interesse:hover {
-  background-color: #0056ff;
+  background-color: #564e43;
   transform: scale(1.05);
 }

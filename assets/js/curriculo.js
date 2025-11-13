@@ -1,3 +1,4 @@
+let curriculoExibido = ["nome: ", "formação", "Especializações / Cursos:", "Experiência profissional", "HardSkills: ", "SoftSkills", "Objetivos: "]
 let respostas = [];
 let perguntas = [
   "Qual é o seu nome completo?",
@@ -42,7 +43,7 @@ function trocaPergunta() {
 
     for (let x = 0; x < respostas.length; x++) {
       divResp.innerHTML += `
-        <strong>${perguntas[x]}</strong><br>
+        <strong>${curriculoExibido[x]} </strong>
         ${respostas[x]}<br><br>
       `;
     }

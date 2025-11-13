@@ -1,7 +1,5 @@
-
 header {
   background-color: #564e43;
-  
   box-shadow: 0 2px 8px rgba(0, 50, 150, 0.1);
   padding: 0.8rem 2rem;
   position: sticky;
@@ -10,12 +8,15 @@ header {
 }
 
 .navbar {
+  color: #eae8dc;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
+  gap: 20px;
 }
+
 
 .logo-container {
   display: flex;
@@ -25,35 +26,128 @@ header {
 }
 
 .logo {
-  width: 38px;
-  height: 38px;
+  width: 45px;
+  height: auto;
+  filter: brightness(1000%);
 }
 
 .logo-container h1 {
   font-size: 1.4rem;
-  color: #0056ff;
+  color: #eae8dc;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
+
+.search-area {
+  display: flex;
+  align-items: center;
+  background: #eae8dc;
+  padding: 6px 14px;
+  border-radius: 30px;
+  gap: 8px;
+  flex: 1;
+  max-width: 450px;
+}
+
+.search-area input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #564e43;
+}
+
+.search-area input:focus {
+  outline: none;
+}
+
+.search-area button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #564e43;
+  font-size: 1rem;
+}
+
+/* AÇÕES À DIREITA (ENTRAR + HAMBÚRGUER) */
+.menu-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.btn-login {
+  background: #eae8dc;
+  padding: 8px 18px;
+  border-radius: 8px;
+  color: #564e43;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.btn-login:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 70, 180, 0.2);
+
+}
+
+/* HAMBURGUER */
+.hamburger {
+  width: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #eae8dc;
+  border-radius: 4px;
+}
+
+/* MENU INFERIOR */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
   margin: 0;
   padding: 0;
+  padding-top: 12px;
+  justify-content: center;
 }
 
 .nav-links a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  color: #0056ff;
+  color: #eae8dc;
   transition: color 0.3s ease, border-bottom 0.3s ease;
   padding-bottom: 4px;
 }
 
 .nav-links a:hover {
-  color: #0056ff;
-  border-bottom: 2px solid #0074ff;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .search-area {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 750px) {
+  .search-area {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
 }
