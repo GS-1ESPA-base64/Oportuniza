@@ -1,11 +1,14 @@
+
 @import url("./header.css");
 @import url("./footer.css");
 @import url("./vagas.css");
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap'); 
+/* estou chamando a api do google pra conseguir a fonte especifica, Kalnia */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Kalnia", sans-serif;
 }
 
 body {

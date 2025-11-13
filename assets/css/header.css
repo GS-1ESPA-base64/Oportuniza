@@ -17,28 +17,35 @@ header {
   gap: 20px;
 }
 
-
 .logo-container {
+  position: absolute; /*gambiarra sinistra pra resolver o comportamento do container referente ao botao de busca*/
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-left: 0;
+  gap: 5px;
+  flex: 0 0 auto; 
+  white-space: nowrap;
 }
 
+
 .logo {
-  width: 45px;
+  width: 50px;
   height: auto;
-  filter: brightness(1000%);
+ 
 }
 
 .logo-container h1 {
   font-size: 1.4rem;
   color: #eae8dc;
   font-weight: 700;
+  width: 125px;
   letter-spacing: 0.5px;
 }
 
-
+.search-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
 .search-area {
   display: flex;
   align-items: center;
@@ -46,8 +53,8 @@ header {
   padding: 6px 14px;
   border-radius: 30px;
   gap: 8px;
-  flex: 1;
   max-width: 450px;
+  width: 100%;
 }
 
 .search-area input {
@@ -109,8 +116,6 @@ header {
   background: #eae8dc;
   border-radius: 4px;
 }
-
-/* MENU INFERIOR */
 .nav-links {
   list-style: none;
   color: #eae8dc;
@@ -123,32 +128,32 @@ header {
 }
 
 .nav-links a {
+  position: relative;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   color: #eae8dc;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
   padding-bottom: 4px;
+  transition: color 1s ease;
 }
+
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: width 0.4s ease;
+}
+
 
 .nav-links a:hover {
   color: #fff;
-  border-bottom: 2px solid #fff;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 900px) {
-  .search-area {
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 750px) {
-  .search-area {
-    display: none;
-  }
-
-  .nav-links {
-    display: none;
-  }
+.nav-links a:hover::after {
+  width: 100%;
 }
