@@ -1,0 +1,79 @@
+@import url("./style.css");
+.formOportuniza {
+  background-color: #564e43;
+  padding: 2.5rem;
+  max-width: 650px;
+  margin: 3rem auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  color: #f4f2e8;
+  text-align: left;
+}
+
+.formOportuniza h2 {
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  color: #f4f2e8;
+}
+
+.formOportuniza p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #eae8dc;
+}
+
+.form-group {
+  margin-bottom: 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #eae8dc;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #eae8dc;
+  color: #222;
+  font-family: "Kalnia", sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 2px solid #c4b89e;
+}
+
+.btnForm {
+  width: 30%;
+  display: block;
+
+  background-color: #38322b;
+  color: #f4f2e8;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+   margin: 1.5rem auto 0 auto;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  font-family: "Kalnia", sans-serif;
+}
+
+.btnForm:hover {
+  background-color: #2d2823;
+  transform: translateY(-3px);
+}

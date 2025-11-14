@@ -1,0 +1,30 @@
+@import url("./style.css");
+.wokwi {
+  width: 1300px;  
+  height: 600px;
+  position: relative;
+  left: -400px;
+  right: auto;     
+  top: 0;
+  border: none;
+  clip-path: inset(0 0 0 650px);/*aqui eu consigo "cortar" o iframe*/
+}
+main ol {
+
+  list-style-type: disc;
+}
+
+.lista{
+    padding-left: 30%;
+}
+main ul {
+  list-style: none;
+  padding-left: 350px;
+    text-align: justify;
+  list-style-position: inside; /* mantém a bolinha perto do texto */
+}
+
+main ul li::before {
+  content: "●";
+  color: black;
+}

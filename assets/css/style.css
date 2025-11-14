@@ -105,6 +105,7 @@ h2, p {
   background-color: #564e43; 
   padding: 2rem 1rem;
   cursor: pointer;
+  display: block;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -126,4 +127,9 @@ h2, p {
   color: #f4f2e8; 
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+main a{
+  text-decoration: none;
+
 }

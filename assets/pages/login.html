@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../imgs/maleta.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+
+    
+    <div class="logo-container">
+      <img src="../imgs/maleta.png" alt="Logo Oportuniza" class="logo">
+      <h1>Oportuniza</h1>
+    </div>
+
+     <div class="search-wrapper">
+      <div class="search-area">
+        <input type="text" placeholder="busque no site" class="search-input">
+        <button class="search-btn"></button>
+      </div>
+    </div>
+
+    <div class="menu-actions">
+      <a href="#" class="btn-login">Entrar</a>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  
+  <ul class="nav-links">
+    <li><a href="../../index.html">Home</a></li> |
+    <li><a href="./vagas.html">Vagas</a></li> |
+    <li><a href="./curriculo.html">Meu Currículo</a></li> |
+    <li><a href="./recrutador.html">Recrutar</a></li> |
+    <li><a href="./projetos.html">Projetos</a></li> |
+    <li><a href="./capacitacoes.html">Cursos</a></li>
+  </ul>
+</header>
+<main>
+    <form action="../../index.html" method="get" class="formOportuniza">
+
+  <h2>Cadastre-se para receber novas oportunidades</h2>
+  <p>Preencha os campos abaixo e dê o próximo passo na sua jornada profissional.</p>
+
+  <div class="form-group">
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" name="nome" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="area">Área de interesse</label>
+    <select id="area" name="area" required>
+      <option value="">Selecione...</option>
+      <option value="tecnologia">Tecnologia</option>
+      <option value="administracao">Administração</option>
+      <option value="marketing">Marketing</option>
+      <option value="design">Design</option>
+      <option value="educacao">Educação</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="msg">Mensagem (opcional)</label>
+    <textarea id="msg" name="msg" rows="4"></textarea>
+  </div>
+
+  <button type="submit" class="btnForm">Enviar</button>
+
+</form>
+
+</main>
+    
+<script src="../js/vagas.js"></script>
+<footer class="footer">
+  <p>© 2025 Oportuniza</p>
+</footer>
+</body>
+</html>
