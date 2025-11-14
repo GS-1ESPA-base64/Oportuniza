@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>curriculo</title>
-  <link rel="stylesheet" href="../css/curriculo.css">
-  <link rel="icon" href="../imgs/maleta.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/logado.css">
+    <link rel="icon" href="../imgs/maleta.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
     </div>
 
     <div class="menu-actions">
-          <div id="login">      <a href="./login.html" class="btn-login">Entrar</a></div>
+     <div id="login">      <a href="./login.html" class="btn-login">Entrar</a></div>
 
       <div class="hamburger">
         <span></span>
@@ -45,23 +46,20 @@
     <li><a href="./capacitacoes.html">Cursos</a></li>
   </ul>
 </header>
-<main>
-  <p>tem um tempinho pra responder uma pesquisa sobre profissões?</p>
-  <a href="./profissoes.html"></a><button>vamos lá!</button>
-  <div id="container" class="container">
-    <h2 id="pergunta">Qual é o seu nome completo?</h2>
-    <div id="inputResposta">
-      <input type="text" id="txtInput" placeholder="Digite aqui...">
-      <button onclick="trocaPergunta()">Enviar</button>
-    </div>
-  </div>
-  </main>
 
+
+<main><
+<h1><div id="nome"></div></h1>
+<h2>candidaturas em análise:</h2>
+<div id="candidaturas"></div>
+</main>
+
+
+<script src="../js/logado.js"></script>
+    <script src="../js/verificaLogin2.js"></script>
+<script src="../js/login.js"></script>
 <footer class="footer">
-  <p>© 2025 Oportuniza </p>
+  <p>© 2025 Oportuniza</p>
 </footer>
-<script src="../js/verificaLogin2.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="../js/curriculo.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 let imagens = ["./assets/imgs/banner.png", "./assets/imgs/banner2.png", "./assets/imgs/banner3.png"];
 
 let i = 0;
@@ -30,3 +31,4 @@ slideShow()
 function confirma(){
 Swal.fire('Interesse manifestado!', 'Candidatura realizada!', 'success')
 }
+

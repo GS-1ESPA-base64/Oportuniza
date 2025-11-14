@@ -1,0 +1,26 @@
+@import url("./style.css");
+
+.candidaturaIndividual {
+  background-color: #ffffff;
+  border: 2px solid #564e43;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 50, 150, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  text-align: left;
+}
+
+.candidaturaIndividual:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 70, 180, 0.25);
+  border-color: #564e43;
+}
+
+.candidaturaIndividual p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}

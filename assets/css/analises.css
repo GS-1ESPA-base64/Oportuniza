@@ -1,0 +1,56 @@
+@import url("./style.css");
+
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #564e43;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #564e43;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+p {
+  line-height: 1.7;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+ul {
+  margin: 1rem 0 1rem 1.2rem;
+  line-height: 1.7;
+}
+
+.box-destaque {
+  background: #fafafa;
+  border-left: 5px solid #564e43;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Destaque da função */
+pre {
+  font-size: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  overflow-x: auto;
+  color: #222;
+  margin-bottom: 0.8rem;
+}
