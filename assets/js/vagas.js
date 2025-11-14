@@ -16,7 +16,7 @@ function salvaCandidatura(vaga) {
 }
 
 function confirma(vaga) {
-  if (salvaCandidatura(vaga)) {
+  if (salvaCandidatura(vaga)) {// se a funcao salvaCandidtura funfar, ele printa o swall fire
     Swal.fire({
       title: "Candidatura Enviada!",
       text: "Suas respostas foram registradas com sucesso.",

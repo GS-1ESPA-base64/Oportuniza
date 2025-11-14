@@ -1,3 +1,5 @@
+// funcao que verifica o login apartir da index, se colocar em outra pagina
+// ele quebra o link
 function verificaLogin(){
 //aqui eu tô exportando a funcao pra não ficar repetindo código toda hora
   const nomeUser = localStorage.getItem("userNome");

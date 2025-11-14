@@ -23,9 +23,6 @@ let perguntas = [
 let contador = 0;
 let pergunta = document.getElementById("pergunta");
 
-// ---------------------------
-// SKILLS (RPG PROFISSIONAL)
-// ---------------------------
 let skills = {
   organizacao: 0,
   comunicacao: 0,
@@ -85,17 +82,19 @@ function analisarSkills(texto) {
   ]
 };
 
-  for (const skill in grupos) {
-    grupos[skill].forEach(palavra => {
-      // Conta quantas vezes a palavra aparece
-      const regex = new RegExp(palavra, "g");
-      const matches = texto.match(regex);
-
-      if (matches) {
-        skills[skill] += matches.length; // soma todas
-      }
-    });
-  }
+for (const grupo in grupos) {  //para cada subdivisão em grupo(foco, logica, criatividade...)
+  grupos[grupo].forEach(palavra => {  //para cada palavra em cada subdivisão
+    const count =//aplit divide a string em uma condicao
+      texto.toLowerCase().split(palavra.toLowerCase()).length - 1;
+      //aqui eu to cortando a string a cada vez que aparece uma palavra de um subgrupo,
+      // usando os Cases pra não ter chance de acontecer algo como responsabilidade != Responsabilidade
+      // contando as ocorrencias apartir dos splits, subtraindo 1 no final pq:
+      //   split("palavra") vai deixar ["a ", " aparece duas vezes ", " aqui"]
+      // então length = 3 → ocorrências = 3 - 1 = 2
+      // fiz essa gambiarra pra não usar expressões regulares
+    skills[grupo] += count;
+  });
+}
 }
 
 
@@ -103,6 +102,7 @@ function trocaPergunta() {
   const input = document.getElementById("txtInput");
   const resp = input.value.trim(); // trim serve pra retirar espacos
 /*
+vou permitir que mandem respostas vazias pra testes, ou cada teste vai demorar muito 
   if (!resp) {
     Swal.fire({
       title: "Ops!",
@@ -114,7 +114,7 @@ function trocaPergunta() {
   }
 */
   respostas.push(resp);
-  analisarSkills(resp); // <-- análise integrada
+  analisarSkills(resp); // análise integrada
 
   input.value = "";
   contador++;
@@ -162,12 +162,14 @@ divResp.innerHTML += `
   <h2>Gráfico – Mapa de Competências</h2>
   <canvas id="graficoSkills" width="400" height="400"></canvas>
 `;
+
+// pra renderizar o gráfico vou usar a biblioteca Chart.js, cuja documentaao está em https://www.chartjs.org/docs/latest/getting-started/usage.html
   const ctx = document.getElementById("graficoSkills").getContext("2d");
 
 new Chart(ctx, {
   type: "radar",
   data: {
-    labels: [
+    labels: [ //defino cada "ponta"  do gráfico
       "Organização", 
       "Comunicação", 
       "Criatividade", 
@@ -175,7 +177,7 @@ new Chart(ctx, {
       "Foco", 
       "Autogestão"
     ],
-    datasets: [{
+    datasets: [{//aqui eu alimento o gráfico com os dados
       label: "Mapa de Competências",
       data: [
         skills.organizacao,
@@ -195,7 +197,7 @@ new Chart(ctx, {
   },
   options: {
     scales: {
-      r: {
+      r: {//configuracoes de estilizacao do gráfico
         min: 0,
         max: 3,
         ticks: { display: false },
@@ -211,3 +213,5 @@ new Chart(ctx, {
 }
 
 
+// exemplo de string pra teste de Soft Skill:
+//planejamento, estratégia, colaboração, clareza, inovação, imaginação, análise, raciocínio lógico, produtividade, concentração, autonomia, proatividade

@@ -1,4 +1,4 @@
-console.log("acessou")
+//funcao que verifica o login em páginas que estão dentro do pages
 function verificaLogin2(){
 //aqui eu tô exportando a funcao pra não ficar repetindo código toda hora
   const nomeUser = localStorage.getItem("userNome");
