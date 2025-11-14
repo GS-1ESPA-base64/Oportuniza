@@ -6,6 +6,7 @@
   <title>curriculo</title>
   <link rel="stylesheet" href="../css/curriculo.css">
   <link rel="icon" href="../imgs/maleta.png">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -46,8 +47,8 @@
   </ul>
 </header>
 <main>
-  <p>tem um tempinho pra responder uma pesquisa sobre profissões?</p>
-  <a href="./profissoes.html"></a><button>vamos lá!</button>
+  <p>entenda como funciona o gráfico:</p>
+  <a href="./grafico.html"><button>vamos lá!</button></a>
   <div id="container" class="container">
     <h2 id="pergunta">Qual é o seu nome completo?</h2>
     <div id="inputResposta">
@@ -55,6 +56,8 @@
       <button onclick="trocaPergunta()">Enviar</button>
     </div>
   </div>
+
+  <div class="resp"></div>
   </main>
 
 <footer class="footer">
