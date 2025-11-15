@@ -7,7 +7,7 @@
 }
 
 .intro h2 {
-  color: #564e43;
+  color: #717F63;
 }
 
 .cards-container {
@@ -20,7 +20,7 @@
 
 .card {
   background: #fff;
-  border: 2px solid #564e43;
+  border: 2px solid #717F63;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 80, 0.1);
   padding: 1rem;
@@ -43,7 +43,7 @@
 
 .cargo {
   font-weight: 600;
-  color: #564e43;
+  color: #717F63;
 }
 
 .skills {
@@ -60,7 +60,7 @@
 .slide-container {
   position: relative;
   background: #fff;
-  border: 2px solid #564e43;
+  border: 2px solid #717F63;
   border-radius: 12px;
   width: 80%;
   max-width: 800px;
@@ -83,7 +83,7 @@
   height: 45px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #564e43;
+  background-color: #717F63;
   color: #fff;
   border: none;
   font-size: 2rem;
@@ -94,7 +94,7 @@
 }
 
 .btn-slide:hover {
-  background-color: #564e43;
+  background-color: #717F63;
 }
 
 .left {
@@ -115,7 +115,7 @@
 }
 
 .btn-acao {
-  background-color: #564e43;
+  background-color: #717F63;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -125,6 +125,6 @@
 }
 
 .btn-acao:hover {
-  background-color: #564e43;
+  background-color: #717F63;
   transform: scale(1.05);
 }

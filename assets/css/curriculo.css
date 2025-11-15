@@ -6,7 +6,7 @@
   background-color: #fff;
   padding: 2.5rem;
 
-  border: 2px solid #564D43;
+  border: 2px solid #717F63;
   border-radius: 5%;
   box-shadow: 0 8px 20px rgba(0, 68, 170, 0.15);
   max-width: 600px;
@@ -26,13 +26,13 @@
 #txtInput {
   width: 80%;
   padding: 0.8rem;
-  border: 2px solid #564e43;
+  border: 2px solid #717F63;
   border-radius: 8px;
   font-size: 1rem;
 }
 
 button {
-  background-color: #564e43;
+  background-color: #717F63;
   color: white;
   border: none;
   border-radius: 8px;
@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-  background-color: #564e43;
+  background-color: #717F63;
 }
 
 

@@ -19,17 +19,17 @@
   transform: translateY(-3px);
 }
 
-/* Pergunta */
+
 #pergunta {
   font-size: 1.4rem;
-  color: #564e43;
+  color: #717F63;
   margin-bottom: 1.5rem;
 }
 
 #txtInput {
   width: 80%;
   padding: 0.8rem;
-  border: 2px solid #564e43;
+  border: 2px solid #717F63;
   border-radius: 8px;
   outline: none;
   font-size: 1rem;
@@ -37,11 +37,11 @@
 }
 
 #txtInput:focus {
-  border-color: #564e43;
+  border-color: #717F63;
 }
 
 #inputResposta button {
-  background-color: #564e43;
+  background-color: #717F63;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -53,7 +53,7 @@
 }
 
 #inputResposta button:hover {
-  background-color: #564e43;
+  background-color: #717F63;
   transform: scale(1.05);
 }
 
@@ -63,7 +63,7 @@
 }
 
 strong {
-  color: #564e43;
+  color: #717F63;
 }
 
 #container,

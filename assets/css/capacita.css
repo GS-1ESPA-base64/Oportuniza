@@ -22,7 +22,7 @@ body {
 
 .curso {
   background-color: #eae8dc;
-  border: 2px solid #564e43;
+  border: 2px solid #717F63;
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0, 50, 150, 0.1);
@@ -32,13 +32,13 @@ body {
 .curso:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 22px rgba(0, 70, 180, 0.2);
-  border-color: #564e43;
+  border-color: #717F63;
 }
 
 
 .curso h3 {
   font-size: 1.2rem;
-  color: #564e43;
+  color: #717F63;
   margin-bottom: 8px;
   font-weight: 600;
 }
@@ -60,7 +60,7 @@ body {
 
 .btn-inscricao {
   display: inline-block;
-  background-color: #564e43;
+  background-color: #717F63;
   color: #fff;
   border: none;
   border-radius: 8px;

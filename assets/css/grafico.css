@@ -14,7 +14,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  columns: 2;          /* Divide a lista em 2 colunas */
+  columns: 2;          
   column-gap: 2rem;
 }
 
@@ -23,7 +23,7 @@
   font-size: 0.97rem;
   color: #333;
   border-bottom: 1px dashed #ddd;
-  break-inside: avoid; /* evita quebrar itens na coluna */
+  break-inside: avoid;
 }
 
 .lista-skills li:last-child {
@@ -32,7 +32,7 @@
 .skills-container {
   d.skills-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* agora ficam sempre 2 */
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   padding: 2rem;
   max-width: 1200px;

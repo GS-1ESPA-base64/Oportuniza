@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  border: 2px solid #564e43;
+  border: 2px solid #717F63;
   border-radius: 10px;
   padding: 1.5rem;
   margin: 1rem auto;
@@ -17,7 +17,7 @@
 .candidaturaIndividual:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 70, 180, 0.25);
-  border-color: #564e43;
+  border-color: #717F63;
 }
 
 .candidaturaIndividual p {
@@ -32,7 +32,7 @@
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
-  color: #564e43;
+  color: #717F63;
   transition: 0.2s ease;
 }
 
