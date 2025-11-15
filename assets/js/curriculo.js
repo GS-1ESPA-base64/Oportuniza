@@ -160,11 +160,14 @@ function mostrarResumo() {
   `;
 divResp.innerHTML += `
   <h2>Gráfico – Mapa de Competências</h2>
-  <canvas id="graficoSkills" width="400" height="400"></canvas>
+  <canvas id="graficoSkills" width="400" height="400" class="grafico"></canvas>
 `;
 
 // pra renderizar o gráfico vou usar a biblioteca Chart.js, cuja documentaao está em https://www.chartjs.org/docs/latest/getting-started/usage.html
   const ctx = document.getElementById("graficoSkills").getContext("2d");
+
+const limitar = (valor, min = 0, max = 5) => Math.min(Math.max(valor, min), max);
+// arrow function pra limitar os valores entre min(0) e max(5)
 
 new Chart(ctx, {
   type: "radar",
@@ -180,26 +183,26 @@ new Chart(ctx, {
     datasets: [{//aqui eu alimento o gráfico com os dados
       label: "Mapa de Competências",
       data: [
-        skills.organizacao,
-        skills.comunicacao,
-        skills.criatividade,
-        skills.logica,
-        skills.foco,
-        skills.autogestao
+        limitar(skills.organizacao),
+        limitar(skills.comunicacao),
+        limitar(skills.criatividade),
+        limitar(skills.logica),
+        limitar(skills.foco),
+        limitar(skills.autogestao)
       ],
       borderColor: "#564e43",
       backgroundColor: "rgba(86, 78, 67, 0.25)",
       borderWidth: 2,
       pointBackgroundColor: "#564e43",
       pointBorderColor: "#fff",
-      pointRadius: 4
+      pointRadius: 5
     }]
   },
   options: {
     scales: {
       r: {//configuracoes de estilizacao do gráfico
         min: 0,
-        max: 3,
+        max: 5,
         ticks: { display: false },
         grid: { color: "#ccc" },
         pointLabels: { 
