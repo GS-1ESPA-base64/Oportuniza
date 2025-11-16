@@ -45,10 +45,24 @@ button:hover {
   background-color: #717F63;
 }
 
-
-.grafico {
-  margin: 2rem auto 0; 
-  max-width: 400px;
+.layout-curriculo {
   width: 100%;
-  display: block;
+  border-collapse: collapse;
+}
+
+.coluna-texto {
+  width: 60%;
+  vertical-align: top; 
+  padding-right: 2rem;
+}
+
+.coluna-grafico {
+  width: 40%;
+  vertical-align: top;
+  text-align: center;
+}
+
+.coluna-grafico canvas {
+  max-width: 320px;
+  width: 100%;
 }

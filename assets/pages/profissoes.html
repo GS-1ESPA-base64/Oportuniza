@@ -3,77 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profissoes</title>
-    <link rel="stylesheet" href="../css/vagas.css">
+    <title>Profissões | Oportuniza</title>
+
+    <link rel="stylesheet" href="../css/profissoes.css">
     <link rel="icon" href="../imgs/maleta.png">
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js" > </script> 
-    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js" ></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
 </head>
+
 <body onload="brython()">
-    <header>
-  <nav class="navbar">
 
-    
-    <div class="logo-container">
-      <img src="../imgs/maleta.png" alt="Logo Oportuniza" class="logo">
-      <h1>Oportuniza</h1>
-    </div>
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../imgs/maleta.png" class="logo">
+            <h1>Oportuniza</h1>
+        </div>
 
-     <div class="search-wrapper">
-      <div class="search-area">
-        <input type="text" placeholder="busque no site" class="search-input">
-        <button class="search-btn"></button>
-      </div>
-    </div>
+        <div class="search-wrapper">
+            <div class="search-area">
+                <input type="text" placeholder="busque no site" class="search-input">
+                <button class="search-btn"></button>
+            </div>
+        </div>
 
-    <div class="menu-actions">
-          <div id="login">      <a href="./login.html" class="btn-login">Entrar</a></div>
+        <div class="menu-actions">
+            <div id="login"><a href="./login.html" class="btn-login">Entrar</a></div>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
 
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </nav>
-
-  
-  <ul class="nav-links">
-    <li><a href="../../index.html">Home</a></li> |
-    <li><a href="./vagas.html">Vagas</a></li> |
-    <li><a href="./curriculo.html">Meu Currículo</a></li> |
-    <li><a href="./recrutador.html">Recrutar</a></li> |
-    <li><a href="./projetos.html">Projetos</a></li> |
-    <li><a href="./capacitacoes.html">Cursos</a></li>
-  </ul>
+    <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li> |
+        <li><a href="./vagas.html">Vagas</a></li> |
+        <li><a href="./curriculo.html">Meu Currículo</a></li> |
+        <li><a href="./recrutador.html">Recrutar</a></li> |
+        <li><a href="./projetos.html">Projetos</a></li> |
+        <li><a href="./capacitacoes.html">Cursos</a></li>
+    </ul>
 </header>
 
 <main>
     <div class="profissoes-container">
+
         <h1>Cadastrar Profissões</h1>
-        <div class="cadastra">
-            <input type="text" id="cadastro" placeholder="Digite a profissão desejada"><br>
-            <input type="number" name="" id="taxaCresc" placeholder="Digite a taxa de cresimento esperada"><br>
-            <button id="btnAddof">Adicionar Profissão</button>
+
+        <!-- CARD CADASTRO -->
+        <div class="card">
+            <h2>Adicionar profissão</h2>
+            <label for="cadastro">Profissão:</label>
+            <input type="text" id="cadastro" placeholder="Digite a profissão desejada" class="profissao">
+            <label for="taxaCresc">Taxa de Crescimento (%):</label>
+            <input type="number" id="taxaCresc" placeholder="" class="numerico">
+            <br>
+            <button id="btnAdicionar" class="btn">Adicionar Profissão</button>
         </div>
-        <hr>
-        <div class="listaProfissoes">
-            <h2>Profissões | taxa de crescimento</h2>
-            <ul id="profissaoList">
-                <!-- As profissões cadastradas aparecerão aqui -->
-            </ul>
-            <input type="text" id="filtroTaxa" placeholder="Filtrar por taxa mínima de crescimento"><br>
-            <button id="btnFiltrar" >Filtrar</button>
+
+
+        <div class="card">
+            <h2>Profissões cadastradas</h2>
+            <div id="profissaoList"></div>
+        </div>
+
+        <div class="card">
+            <h2>Filtrar por taxa mínima (%)</h2>
+
+            <input type="number" id="filtroTaxa" placeholder="" class="numerico"><br>
+            <button id="btnFiltrar" class="btn btn-secundario">Filtrar</button>
 
             <div id="resultadoFiltro"></div>
+        </div>
+
     </div>
 </main>
-    <script type="text/python" src="../py/brython.js" ></script>
-<script src="../js/vagas.js"></script>
+
+<script type="text/python" src="../py/brython.js"></script>
+<script src="../js/verificaLogin2.js"></script>
+
 <footer class="footer">
-  <p>© 2025 Oportuniza</p>
+    <p>© 2025 Oportuniza</p>
 </footer>
+
 </body>
 </html>
