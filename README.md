@@ -1,48 +1,78 @@
 # Oportuniza
 
-O Oportuniza é uma plataforma desenvolvida para apoiar pessoas em processo de recolocação profissional. O projeto reúne ferramentas, conteúdos e simulações interativas que auxiliam na preparação para entrevistas, no desenvolvimento de competências e na exploração de carreiras emergentes.
+O **Oportuniza** é uma plataforma desenvolvida para apoiar pessoas em processo de recolocação profissional, integrando tecnologia, design e experiências interativas. O sistema reúne ferramentas digitais, simuladores, análises e recursos formativos que ajudam o usuário a se preparar para entrevistas, explorar carreiras emergentes, construir seu currículo e conectar-se a oportunidades com mais estratégia.
 
 ---
 
 ## 1. Visão Geral
 
-O objetivo do Oportuniza é proporcionar um ambiente de aprendizagem acessível, prático e informativo. A plataforma combina elementos visuais, conteúdos objetivos e experiências simuladas que permitem ao usuário aprimorar suas habilidades profissionais de forma estruturada.
+![preview do index](./assets/imgs/screenshots/telaInicial.png)
+![preview do curriculo](./assets/imgs/screenshots/curriculo.png)
+![preview do curriculo](./assets/imgs/screenshots/teste.png)
+![preview do curriculo](./assets/imgs/screenshots/perfil.png)
+
+A plataforma foi idealizada com foco em simplicidade e profundidade funcional.  
+Ela combina:
+
+- Website responsivo  
+- Simulador digital de entrevistas 
+- Simulador físico baseado em Arduino  
+- Módulo “Profissões do Futuro” com Python rodando no navegador  
+- Gerador automático de currículo profissional  
+- Filtro inteligente para recrutadores  
+- Painel do usuário com candidaturas realizadas  
+
+Seguindo princípios de **Software Design**, o sistema mantém organização modular, navegação clara e integração eficiente entre suas partes.
 
 ---
 
 ## 2. Objetivos do Projeto
 
-- Facilitar a preparação para entrevistas através de simuladores interativos.
-- Fornecer conteúdos sobre produtividade e competências do futuro.
-- Criar uma plataforma intuitiva, responsiva e agradável de navegar.
-- Oferecer um espaço centralizado para aprendizado profissional e autodesenvolvimento.
+- Facilitar a preparação para entrevistas através de simuladores digitais e físicos.  
+- Analisar competências profissionais de modo visual e objetivo.  
+- Permitir que o usuário explore carreiras emergentes com projeções de crescimento.  
+- Gerar um currículo completo com Soft Skills representadas em gráfico radial.  
+- Apoiar recrutadores na análise e filtragem de candidatos.  
+- Promover acessibilidade, autonomia e desenvolvimento profissional contínuo.
 
 ---
 
 ## 3. Funcionalidades
 
-### 3.1. Simulação de Entrevista
-- Integração com Wokwi utilizando Arduino virtual.
-- Simulação de botões, joystick e display LCD para criar uma experiência interativa.
-- Sistema idealizado para treinar tempo de resposta, organização do discurso e controle emocional.
+### 3.1. Simulador de Entrevista (Digital)
+- Quizz com perguntas objetivas e dissertativas.
+- Cronômetro para tempo de resposta.
+- Seleção de idioma.
+- Navegação simples e responsiva.
+- Ideal para treino de discurso, clareza e pressão de tempo.
 
-### 3.2. Cards Interativos
-A plataforma apresenta quatro módulos principais:
+### 3.2. Simulador Físico (Arduino)
+- Dispositivo complementar ao site.
+- Perguntas exibidas em tela LCD.
+- Botões para navegação.
+- Registro de respostas e medição de tempo.
+- Possibilidade de armazenar informações na EEPROM.
 
-- Aumente sua eficiência em entrevistas  
-- Dobre sua produtividade  
-- Profissões do futuro  
-- Apresentação  
+### 3.3. Profissões do Futuro (Python no Navegador)
+- Inserção de novas profissões e taxa de crescimento.
+- Aplicação de filtro para exibir apenas profissões acima de determinada taxa.
+- Soma automática das taxas filtradas.
+- Execução com Python integrado ao Browser (Brython).
 
-Cada card direciona o usuário para páginas com conteúdos ou atividades específicas.
+### 3.4. Meu Currículo
+- Usuário preenche nome, formação, experiências e habilidades.
+- Geração automática de um modelo de currículo.
+- Exibição de gráfico radial com Soft Skills.
+- Página simples e totalmente responsiva.
 
-### 3.3. Formulário de Cadastro
-- Coleta de nome, e-mail, área de interesse e mensagem opcional.
-- Estrutura responsiva e estilização alinhada ao design geral do site.
+### 3.5. Aba “Recrutar”
+- Exibição de candidatos cadastrados.
+- Informações organizadas por perfil.
+- Campo que destaca automaticamente os candidatos mais qualificados.
 
-### 3.4. Layout Responsivo
-- Construção com CSS Grid e Flexbox.
-- Interfaces adaptadas para dispositivos móveis, tablets e desktops.
+### 3.6. Painel do Usuário
+- Acessado clicando no ícone de perfil.
+- Exibe nome, candidaturas realizadas e botão de lixeira para remover inscrições.
 
 ---
 
@@ -52,16 +82,96 @@ Cada card direciona o usuário para páginas com conteúdos ou atividades espec�
 - HTML5  
 - CSS3  
 - Flexbox  
-- CSS Grid Layout  
-- Google Fonts (Kalnia)  
-- Embeds do Wokwi para simulações  
+- CSS Grid  
 
-### Outras Tecnologias e Recursos
-- Estrutura modular com arquivos CSS específicos (header, footer, layout de vagas, etc.)
-- Paleta de cores neutras com tons de marrom, bege e cinzas.
-- Sombreados suaves e bordas arredondadas para reforçar a identidade visual.
+### Back-end / Lógica Integrada
+- Python executado no navegador (Brython)  
+- JavaScript para lógica dos módulos  
+- Arduino (para simulador físico e digital)  
+
+### Design e Identidade Visual
+- Cores neutras (marrom, bege, cinza)  
+- Bordas arredondadas  
+- Sombreamentos suaves  
+- Google Fonts (Kalnia)  
 
 ---
 
-## 5. Estrutura de Pastas
+## 5. Estrutura de Pastas (Modelo Geral)
 
+```
+OPORTUNIZA/
+│
+├── assets/
+│   ├── css/               # Arquivos de estilo (globais e por página)
+│   │   ├── analises.css
+│   │   ├── capacita.css
+│   │   ├── curriculo.css
+│   │   ├── footer.css
+│   │   ├── grafico.css
+│   │   ├── header.css
+│   │   ├── logado.css
+│   │   ├── login.css
+│   │   ├── pesquisa.css
+│   │   ├── profissoes.css
+│   │   ├── projetos.css
+│   │   ├── recrutador.css
+│   │   ├── style.css
+│   │   └── vagas.css
+│   │
+│   ├── imgs/              # Imagens do projeto
+│   │   ├── screenshots/
+│   │   │   ├── curriculo.png
+│   │   │   ├── perfil.png
+│   │   │   ├── telainicial.png
+│   │   │   └── teste.png
+│   │   ├── ana.jpg
+│   │   ├── banner.png
+│   │   ├── banner2.png
+│   │   ├── banner3.png
+│   │   ├── camera.png
+│   │   ├── dps.png
+│   │   ├── lixeira.png
+│   │   ├── login.png
+│   │   ├── Lucas.png
+│   │   ├── lupa.png
+│   │   ├── maleta.png
+│   │   ├── Mariana.png
+│   │   └── 2x.png
+│   │
+│   ├── js/              
+│   │   ├── curriculo.js
+│   │   ├── logado.js
+│   │   ├── login.js
+│   │   ├── mercado.js
+│   │   ├── recrut.js
+│   │   ├── script.js
+│   │   ├── vagas.js
+│   │   ├── verificalogin.js
+│   │   └── verificaLogin2.js
+│   │
+│   ├── pages/             # Páginas HTML internas
+│   │   ├── analise.html
+│   │   ├── capacitacoes.html
+│   │   ├── curriculo.html
+│   │   ├── grafico.html
+│   │   ├── logado.html
+│   │   ├── login.html
+│   │   ├── pesquisa.html
+│   │   ├── profissoes.html
+│   │   ├── projetos.html
+│   │   ├── recrutador.html
+│   │   ├── teste.html
+│   │   └── vagas.html
+│   │
+│   └── py/               
+│       └── brython.js
+│
+├── index.html            
+├── equipe.txt
+├── LICENSE
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+```
