@@ -176,6 +176,11 @@ OPORTUNIZA/
 - Bordas arredondadas  
 - Sombreamentos suaves  
 - Google Fonts (Kalnia)  
+--- 
+### Como rodar o projeto
+```bash
+git clone https://github.com/SEU-USUARIO/NOME-DO-REPO.git
+```
 
 ---
 ### Tabela dos Desenvolvedores do Projeto
@@ -184,3 +189,4 @@ OPORTUNIZA/
 | Felipe Silva Santos Menezes   | FIAP - Paulista | 566607 |
 | Roger De Carvalho Paiva       | FIAP - Paulista | 566949 |
 | Victor Nunes Braz             | FIAP - Paulista | 567906 |
+
