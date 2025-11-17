@@ -6,10 +6,10 @@ O **Oportuniza** é uma plataforma desenvolvida para apoiar pessoas em processo 
 
 ## 1. Visão Geral
 
-![preview do index](./assets/imgs/screenshots/telaInicial.png)
-![preview do curriculo](./assets/imgs/screenshots/curriculo.png)
-![preview do curriculo](./assets/imgs/screenshots/teste.png)
-![preview do curriculo](./assets/imgs/screenshots/perfil.png)
+<img src="./assets/imgs/screenshots/telaInicial.png" width="350">
+<img src="./assets/imgs/screenshots/curriculo.png" width="350">
+<img src="./assets/imgs/screenshots/teste.png" width="350">
+<img src="./assets/imgs/screenshots/perfil.png" width="350">
 
 A plataforma foi idealizada com foco em simplicidade e profundidade funcional.  
 Ela combina:
@@ -32,7 +32,7 @@ Seguindo princípios de **Software Design**, o sistema mantém organização mod
 OPORTUNIZA/
 │
 ├── assets/
-│   ├── css/               # Arquivos de estilo (globais e por página)
+│   ├── css/               
 │   │   ├── analises.css
 │   │   ├── capacita.css
 │   │   ├── curriculo.css
@@ -48,7 +48,7 @@ OPORTUNIZA/
 │   │   ├── style.css
 │   │   └── vagas.css
 │   │
-│   ├── imgs/              # Imagens do projeto
+│   ├── imgs/        
 │   │   ├── screenshots/
 │   │   │   ├── curriculo.png
 │   │   │   ├── perfil.png
@@ -79,7 +79,7 @@ OPORTUNIZA/
 │   │   ├── verificalogin.js
 │   │   └── verificaLogin2.js
 │   │
-│   ├── pages/             # Páginas HTML internas
+│   ├── pages/            
 │   │   ├── analise.html
 │   │   ├── capacitacoes.html
 │   │   ├── curriculo.html
@@ -162,6 +162,7 @@ OPORTUNIZA/
 - CSS3  
 - Flexbox  
 - CSS Grid  
+- blbioetac Sweet Alert para alertas estilizados
 
 ### Back-end / Lógica Integrada
 - Biblioteca Chart.js (geração de gráficos dinâmicos com Javascript)
