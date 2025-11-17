@@ -26,78 +26,7 @@ Seguindo princípios de **Software Design**, o sistema mantém organização mod
 
 ---
 
-## 2. Objetivos do Projeto
-
-- Facilitar a preparação para entrevistas através de simuladores digitais e físicos.  
-- Analisar competências profissionais de modo visual e objetivo.  
-- Permitir que o usuário explore carreiras emergentes com projeções de crescimento.  
-- Gerar um currículo completo com Soft Skills representadas em gráfico radial.  
-- Apoiar recrutadores na análise e filtragem de candidatos.  
-- Promover acessibilidade, autonomia e desenvolvimento profissional contínuo.
-
----
-
-## 3. Funcionalidades
-
-### 3.1. Simulador de Entrevista (Digital)
-- Quizz com perguntas objetivas e dissertativas.
-- Cronômetro para tempo de resposta.
-- Seleção de idioma.
-- Navegação simples e responsiva.
-- Ideal para treino de discurso, clareza e pressão de tempo.
-
-### 3.2. Simulador Físico (Arduino)
-- Dispositivo complementar ao site.
-- Perguntas exibidas em tela LCD.
-- Botões para navegação.
-- Registro de respostas e medição de tempo.
-- Possibilidade de armazenar informações na EEPROM.
-
-### 3.3. Profissões do Futuro (Python no Navegador)
-- Inserção de novas profissões e taxa de crescimento.
-- Aplicação de filtro para exibir apenas profissões acima de determinada taxa.
-- Soma automática das taxas filtradas.
-- Execução com Python integrado ao Browser (Brython).
-
-### 3.4. Meu Currículo
-- Usuário preenche nome, formação, experiências e habilidades.
-- Geração automática de um modelo de currículo.
-- Exibição de gráfico radial com Soft Skills.
-- Página simples e totalmente responsiva.
-
-### 3.5. Aba “Recrutar”
-- Exibição de candidatos cadastrados.
-- Informações organizadas por perfil.
-- Campo que destaca automaticamente os candidatos mais qualificados.
-
-### 3.6. Painel do Usuário
-- Acessado clicando no ícone de perfil.
-- Exibe nome, candidaturas realizadas e botão de lixeira para remover inscrições.
-
----
-
-## 4. Tecnologias Utilizadas
-
-### Front-end
-- HTML5  
-- CSS3  
-- Flexbox  
-- CSS Grid  
-
-### Back-end / Lógica Integrada
-- Python executado no navegador (Brython)  
-- JavaScript para lógica dos módulos  
-- Arduino (para simulador físico e digital)  
-
-### Design e Identidade Visual
-- Cores neutras (marrom, bege, cinza)  
-- Bordas arredondadas  
-- Sombreamentos suaves  
-- Google Fonts (Kalnia)  
-
----
-
-## 5. Estrutura de Pastas (Modelo Geral)
+## 2. Estrutura de Pastas (Modelo Geral)
 
 ```
 OPORTUNIZA/
@@ -175,3 +104,82 @@ OPORTUNIZA/
 ├── package-lock.json
 └── README.md
 ```
+
+## 3. Objetivos do Projeto
+
+- Facilitar a preparação para entrevistas através de simuladores digitais e físicos.  
+- Analisar competências profissionais de modo visual e objetivo.  
+- Permitir que o usuário explore carreiras emergentes com projeções de crescimento.  
+- Gerar um currículo completo com Soft Skills representadas em gráfico radial.  
+- Apoiar recrutadores na análise e filtragem de candidatos.  
+- Promover acessibilidade, autonomia e desenvolvimento profissional contínuo.
+
+---
+
+## 4. Funcionalidades
+
+### 4.1 Simulador de Entrevista (Digital)
+- Quizz com perguntas objetivas e dissertativas.
+- Cronômetro para tempo de resposta.
+- Seleção de idioma.
+- Navegação simples e responsiva.
+- Ideal para treino de discurso, clareza e pressão de tempo.
+
+### 4.2 Simulador Físico (Arduino)
+- Dispositivo complementar ao site.
+- Perguntas exibidas em tela LCD.
+- Botões para navegação.
+- Registro de respostas e medição de tempo.
+- Possibilidade de armazenar informações na EEPROM.
+
+### 4.3 Profissões do Futuro (Python no Navegador)
+- Inserção de novas profissões e taxa de crescimento.
+- Aplicação de filtro para exibir apenas profissões acima de determinada taxa.
+- Soma automática das taxas filtradas.
+- Execução com Python integrado ao Browser (Brython).
+
+### 4.4 Meu Currículo
+- Usuário preenche nome, formação, experiências e habilidades.
+- Geração automática de um modelo de currículo.
+- Exibição de gráfico radial com Soft Skills.
+- Página simples e totalmente responsiva.
+
+### 4.5 Aba “Recrutar”
+- Exibição de candidatos cadastrados.
+- Informações organizadas por perfil.
+- Campo que destaca automaticamente os candidatos mais qualificados.
+
+### 4.6 Painel do Usuário
+- Acessado clicando no ícone de perfil.
+- Exibe nome, candidaturas realizadas e botão de lixeira para remover inscrições.
+
+---
+
+## 5. Tecnologias Utilizadas
+
+### Front-end
+- HTML5  
+- CSS3  
+- Flexbox  
+- CSS Grid  
+
+### Back-end / Lógica Integrada
+- Biblioteca Chart.js (geração de gráficos dinâmicos com Javascript)
+- Biblioteca Brython (Python executado no navegador)
+- JavaScript para lógica dos módulos  
+- Arduino (para simulador físico e digital)  
+- Local Storage(para armazenar informações do usuário)  
+
+### Design e Identidade Visual
+- Cores neutras (marrom, bege, cinza)  
+- Bordas arredondadas  
+- Sombreamentos suaves  
+- Google Fonts (Kalnia)  
+
+---
+### Tabela dos Desenvolvedores do Projeto
+| Nome                          | Unidade        | RM     |
+|-------------------------------|----------------|--------|
+| Felipe Silva Santos Menezes   | FIAP - Paulista | 566607 |
+| Roger De Carvalho Paiva       | FIAP - Paulista | 566949 |
+| Victor Nunes Braz             | FIAP - Paulista | 567906 |
