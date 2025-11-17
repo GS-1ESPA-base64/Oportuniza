@@ -179,7 +179,7 @@ OPORTUNIZA/
 --- 
 ### Como rodar o projeto
 ```bash
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPO.git
+git clone https://github.com/GS-1ESPA-base64/Oportuniza.git
 ```
 
 ---
