@@ -134,3 +134,12 @@ main a{
   text-decoration: none;
 
 }
+button {
+  background-color: #717F63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
