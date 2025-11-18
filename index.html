@@ -11,36 +11,40 @@
 </head>
 <body>
 <header>
+
   <nav class="navbar">
 
-    
+
     <div class="logo-container">
       <img src="./assets/imgs/maleta.png" alt="Logo Oportuniza" class="logo">
       <h1>Oportuniza</h1>
     </div>
 
-     <div class="search-wrapper">
+
+    <div class="search-wrapper">
       <div class="search-area">
         <input type="text" placeholder="busque no site" class="search-input">
         <button class="search-btn"></button>
       </div>
     </div>
 
-    <div class="a+">
-      <button class="btn-aumenta" onclick="aumentaFonte()">A+</button>
-      <button class="btn-diminui" onclick="diminuiFonte()">A-</button>
-    </div>
-    <div class="menu-actions">
-      <div id="login">
-      <a href="./assets/pages/login.html" class="btn-login">Entrar</a>
+
+    <div class="right-actions">
+
+      <div class="acessibilidade-btns">
+        <button class="btn-aumenta acessivel" onclick="aumentaFonte()">A+</button>
+        <button class="btn-diminui acessivel" onclick="diminuiFonte()">A-</button>
+        <button class="monocromatico acessivel" id="btn-mono" onclick="mudaCor()">desativar cor</button>
       </div>
 
-
+      <div class="login-area">
+        <a href="./assets/pages/login.html" class="login" id="login">Entrar</a>
       </div>
+
     </div>
+
   </nav>
 
-  
   <ul class="nav-links">
     <li><a href="./index.html">Home</a></li> |
     <li><a href="./assets/pages/vagas.html">Vagas</a></li> |
@@ -49,6 +53,7 @@
     <li><a href="./assets/pages/projetos.html">Projetos</a></li> |
     <li><a href="./assets/pages/capacitacoes.html">Cursos</a></li>
   </ul>
+
 </header>
 
     <main>
@@ -118,3 +123,13 @@
 
 </body>
 </html>
+
+
+body.daltonismo,
+body.daltonismo * {
+  /* filtra tudo que tá na tela  */
+  filter: grayscale(100%) !important; 
+  transition: filter 0.4s ease;
+}
+
+
