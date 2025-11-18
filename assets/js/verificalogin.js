@@ -17,3 +17,20 @@ function verificaLogin(){
   }
 }
 verificaLogin()
+function aumentaFonte() {
+    var html = document.documentElement;
+    var estiloAtual = window.getComputedStyle(html).getPropertyValue('font-size');
+    var tamanhoAtual = parseFloat(estiloAtual);
+    if (tamanhoAtual < 24){
+    html.style.fontSize = (tamanhoAtual + 2) + 'px';
+    }
+}
+
+function diminuiFonte() {
+    var html = document.documentElement;
+    var estiloAtual = window.getComputedStyle(html).getPropertyValue('font-size');
+    var tamanhoAtual = parseFloat(estiloAtual);
+    if (tamanhoAtual > 12){
+    html.style.fontSize = (tamanhoAtual - 2) + 'px';
+  }
+}
