@@ -44,41 +44,57 @@ main {
   max-width: 900px;
   margin: 2rem auto;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
 .banner-img {
   width: 100%;
   display: block;
+  z-index: 1;
 }
 
 
 .btn-nav {
- position: absolute;
-  top: 50%;                    
-  transform: translateY(-50%);  
-  background-color: #717F63;
-  color: white;
-  border: none;
-  font-size: 2rem;
-  padding: 0.6rem 1rem;
-  border-radius: 100%;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  z-index: 10;                   
+         
 }
 .btn-nav:hover {
   background-color: #717F63;
   transform: translateY(-50%) scale(1.1);
 }
+.btn-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 50px;         
+  height: 50px;         
+  
+  display: flex;       
+  align-items: center;
+  justify-content: center;
+
+  background-color: #717F63;
+  color: white;
+
+  border: none;
+  border-radius: 50%; 
+
+  font-size: 1.5rem;  
+  cursor: pointer;
+
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+}
 
 .left-btn {
   left: 15px;
+ 
 }
 
 .right-btn {
   right: 15px;
+
 }
 
 h2, p {
@@ -158,4 +174,29 @@ button {
   color: #717F63;
   border: 2px solid #717F63;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.separador{
+  color: #717F63;
+}
+.container-separador{
+  width: 60%;
+  margin: 0 auto;
+}
+.conhecer {
+  position: absolute;
+  bottom: -20px;
+  
+  left: 50%;
+  transform: translateX(-50%);
+  
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+
+  background-color: #717F63;
+  color: white;
+  border: none;
+
+
+  z-index: 2;
 }
