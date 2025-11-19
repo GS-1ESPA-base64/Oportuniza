@@ -177,7 +177,7 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 40%; /* ajuste se quiser */
+  width: 40%; 
   z-index: 9999;
 }
 
@@ -224,7 +224,7 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 40%; /* ajuste */
+  width: 40%;
   z-index: 10;
 }
 
