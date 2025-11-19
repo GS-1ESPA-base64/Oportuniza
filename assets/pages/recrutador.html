@@ -10,35 +10,41 @@
 </head>
 <body>
 
-    <header>
+   <header>
+
   <nav class="navbar">
 
-    
+
     <div class="logo-container">
       <img src="../imgs/maleta.png" alt="Logo Oportuniza" class="logo">
       <h1>Oportuniza</h1>
     </div>
 
-     <div class="search-wrapper">
+
+    <div class="search-wrapper">
       <div class="search-area">
         <input type="text" placeholder="busque no site" class="search-input">
         <button class="search-btn"></button>
       </div>
     </div>
-    <div class="a+">
-      <button class="btn-aumenta acessivel" onclick="aumentaFonte()">A+</button>
-      <button class="btn-diminui acessivel" onclick="diminuiFonte()">A-</button>
-      <button class="monocromatico acessivel" onclick="mudaCor()">mono</button>
-    </div>
-    <div class="menu-actions">
-             <div id="login"><a href="./login.html" class="btn-login login" id="login"><img src="../imgs/logar.png" alt="" width="15px" height="15px"></a>
 
 
+    <div class="right-actions">
+
+      <div class="acessibilidade-btns">
+        <button class="btn-aumenta acessivel" onclick="aumentaFonte()">A+</button>
+        <button class="btn-diminui acessivel" onclick="diminuiFonte()">A-</button>
+        <button class="monocromatico acessivel" id="btn-mono" onclick="mudaCor()">desativar cor</button>
       </div>
+
+      <div class="login-area">
+        <a href="./login.html" class="btn-login login" id="login"><img src="../imgs/logar.png" alt="" width="15px" height="15px"></a>
+      </div>
+
     </div>
+
   </nav>
 
-  
   <ul class="nav-links">
     <li><a href="../../index.html">Home</a></li> |
     <li><a href="./vagas.html">Vagas</a></li> |
@@ -47,6 +53,7 @@
     <li><a href="./projetos.html">Projetos</a></li> |
     <li><a href="./capacitacoes.html">Cursos</a></li>
   </ul>
+
 </header>
   <main>
     <p>tem um momento para responder nossa pesquisa?</p><br><br>
