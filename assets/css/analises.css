@@ -9,7 +9,15 @@
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.container ul {
+  padding-left: 1.2rem; 
+  margin-left: 0;         
+}
 
+.container ul li {
+  padding-left: 0.3rem;  
+  margin-bottom: 0.4rem;   
+}
 h1 {
   color: #717F63;
   margin-bottom: 1rem;
@@ -54,3 +62,12 @@ pre {
   color: #222;
   margin-bottom: 0.8rem;
 }
+
+.grafico {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+} 

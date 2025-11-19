@@ -152,9 +152,7 @@ header {
   border: 2px solid #717F63;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
-.a+{
 
-}
 
 .navbar {
   position: relative;
