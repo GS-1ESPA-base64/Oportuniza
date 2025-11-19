@@ -11,35 +11,40 @@
 </head>
 <body>
 <header>
+
   <nav class="navbar">
 
-    
+
     <div class="logo-container">
       <img src="./assets/imgs/maleta.png" alt="Logo Oportuniza" class="logo">
       <h1>Oportuniza</h1>
     </div>
 
-     <div class="search-wrapper">
+
+    <div class="search-wrapper">
       <div class="search-area">
         <input type="text" placeholder="busque no site" class="search-input">
         <button class="search-btn"></button>
       </div>
     </div>
 
-    <div class="menu-actions">
-      <div id="login">
-      <a href="./assets/pages/login.html" class="btn-login">Entrar</a>
+
+    <div class="right-actions">
+
+      <div class="acessibilidade-btns">
+        <button class="btn-aumenta acessivel" onclick="aumentaFonte()">A+</button>
+        <button class="btn-diminui acessivel" onclick="diminuiFonte()">A-</button>
+        <button class="monocromatico acessivel" id="btn-mono" onclick="mudaCor()">desativar cor</button>
       </div>
 
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="login-area">
+        <a href="./assets/pages/login.html" class="btn-login login" id="login"><img src="./assets/imgs/logar.png" alt="" width="15px" height="15px"></a>
       </div>
+
     </div>
+
   </nav>
 
-  
   <ul class="nav-links">
     <li><a href="./index.html">Home</a></li> |
     <li><a href="./assets/pages/vagas.html">Vagas</a></li> |
@@ -48,16 +53,26 @@
     <li><a href="./assets/pages/projetos.html">Projetos</a></li> |
     <li><a href="./assets/pages/capacitacoes.html">Cursos</a></li>
   </ul>
+
 </header>
 
     <main>
+      
         <div class="banner-container">
-  <button class="btn-nav left-btn" onclick="slideShow('left')">&#8249;</button>
+  <button class="left-btn btn-slide" onclick="slideShow('left')">&#8249;</button>
   
   <img src="./assets/imgs/banner.png" alt="Banner Oportuniza" class="banner-img" id="imgBanner">
   
-  <button class="btn-nav right-btn" onclick="slideShow('right')">&#8250;</button>
+  <button class="right-btn btn-slide" onclick="slideShow('right')">&#8250;</button>
+    <div class="conhecer">Conhecer</div>
 </div>
+
+  
+  <div class="container-separador">
+      
+<hr class="separador">
+  </div>
+<div>
   <div class="outrosProjetos">
 
   <a href="./assets/pages/teste.html" class="cardProjeto">
@@ -81,10 +96,14 @@
   </a>
 
 </div>
-
-        <p>seu site de realocacao profissional!</p>
+<div class="container-separador">
+      
+<hr class="separador">
+  </div>
+<div>
+        <p>Seu site de realocação profissional!</p>
     
-    <p>    confira mais oportunidades clicando em <a href="./assets/pages/vagas.html">vagas</a>
+    <p>    Confira mais oportunidades clicando em <a href="./assets/pages/vagas.html">vagas</a>
 </p>
 <table class="tabela-categorias">
   <tr>
@@ -106,13 +125,20 @@
     </td>
   </tr>
 </table>
+</div>
+
 </main>
 <script src="./assets/js/verificalogin.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/vagas.js"></script>
+
 <footer class="footer">
   <p>© 2025 Oportuniza </p>
 </footer>
 
 </body>
 </html>
+
+
+
+

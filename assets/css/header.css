@@ -42,9 +42,11 @@ header {
 }
 
 .search-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  z-index: 10;
 }
 .search-area {
   display: flex;
@@ -84,7 +86,7 @@ header {
   gap: 18px;
 }
 
-.btn-login {
+.login {
   background: #eae8dc;
   padding: 8px 18px;
   border-radius: 8px;
@@ -101,21 +103,7 @@ header {
 }
 
 
-.hamburger {
-  width: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 18px;
-  cursor: pointer;
-}
 
-.hamburger span {
-  display: block;
-  height: 3px;
-  background: #eae8dc;
-  border-radius: 4px;
-}
 .nav-links {
   list-style: none;
   color: #eae8dc;
@@ -157,3 +145,101 @@ header {
 .nav-links a:hover::after {
   width: 100%;
 }
+.acessivel{
+  font-size: 0.9rem;
+  background-color: #eae8dc;
+  color: #717F63;
+  border: 2px solid #717F63;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo-container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%; 
+  z-index: 9999;
+}
+
+.right-actions {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 15;
+}
+
+.acessibilidade-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-area a {
+  font-size: 1rem;
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo-container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.search-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  z-index: 10;
+}
+
+.right-actions {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 15;
+}
+
+.acessibilidade-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+

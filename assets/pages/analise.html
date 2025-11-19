@@ -5,38 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>simulação</title>
     <link rel="stylesheet" href="../css/analises.css">
-    <link rel="icon" href="../imgs/maleta.png">
+   <link rel="icon" type="image/png" href="../imgs/maleta.png">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <header>
+<header>
+ 
   <nav class="navbar">
 
-    
+
     <div class="logo-container">
       <img src="../imgs/maleta.png" alt="Logo Oportuniza" class="logo">
       <h1>Oportuniza</h1>
     </div>
 
-     <div class="search-wrapper">
+
+    <div class="search-wrapper">
       <div class="search-area">
         <input type="text" placeholder="busque no site" class="search-input">
         <button class="search-btn"></button>
       </div>
     </div>
 
-    <div class="menu-actions">
-     <div id="login">      <a href="./login.html" class="btn-login">Entrar</a></div>
 
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="right-actions">
+
+      <div class="acessibilidade-btns">
+        <button class="btn-aumenta acessivel" onclick="aumentaFonte()">A+</button>
+        <button class="btn-diminui acessivel" onclick="diminuiFonte()">A-</button>
+        <button class="monocromatico acessivel" id="btn-mono" onclick="mudaCor()">desativar cor</button>
       </div>
+
+      <div class="login-area">
+     <div id="login"><a href="./login.html" class="btn-login login" id="login"><img src="../imgs/logar.png" alt="" width="15px" height="15px"></a>
+
+      </div>
+
     </div>
+
   </nav>
 
-  
   <ul class="nav-links">
     <li><a href="../../index.html">Home</a></li> |
     <li><a href="./vagas.html">Vagas</a></li> |
@@ -45,70 +53,77 @@
     <li><a href="./projetos.html">Projetos</a></li> |
     <li><a href="./capacitacoes.html">Cursos</a></li>
   </ul>
+
 </header>
-<main>
- <div class="container">
+<main><div class="container">
   <h1>Eficiência Produtiva e Sustentabilidade</h1>
 
   <p>
-    A automação cresce rapidamente e, com ela, surge o desafio de manter a produtividade sem elevar o consumo energético.
-    Para entender esse equilíbrio, utilizamos ferramentas da matemática aplicada — como funções e análise gráfica.
+    Com o avanço da automação e da robótica, surge um desafio essencial: manter a produtividade em alta sem aumentar 
+    desnecessariamente o consumo de energia. Para compreender esse equilíbrio, recorremos à matemática aplicada, 
+    utilizando funções, derivadas, integrais e análise gráfica para interpretar o comportamento real de um sistema automatizado.
   </p>
 
   <div class="box-destaque">
     <p>
-      Como identificar o ponto ideal de eficiência?  
-      Como prever o impacto energético ao longo do tempo?  
-      A modelagem matemática nos ajuda a responder essas questões.
+      Como determinar o momento em que a produtividade atinge seu máximo?  
+      Em que ponto o gasto energético deixa de compensar?  
+      A modelagem matemática nos permite responder essas perguntas de forma clara e baseada em dados.
     </p>
   </div>
 
   <h2>Funções Aplicadas ao Processo Produtivo</h2>
   <p>
-    Para representar a relação entre tempo de operação e produtividade, utilizamos a função:
+    Para analisar a relação entre tempo de operação, produtividade e consumo energético, utilizamos as funções do estudo:
   </p>
 
   <div class="box-destaque">
     <pre style="font-size:1rem; background:#fff; padding:1rem; border-radius:6px; border:1px solid #ddd;">
-f(t) = -0.2t³ + 2t² + 10t
+Produtividade:      P(t) = 50t − 2t²
+Consumo de energia: E(t) = 10e<sup>0.3t</sup>
     </pre>
     <p>
-      Essa função mostra o crescimento inicial, o pico de eficiência e o declínio típico de sistemas automatizados.
+      A função de produtividade representa um crescimento inicial, seguido de um ponto de máximo desempenho e 
+      posterior queda. Já o consumo energético cresce de forma exponencial, característica comum em sistemas 
+      automatizados que demandam cada vez mais energia ao longo do tempo.
     </p>
   </div>
 
   <h2>Análise do Gráfico</h2>
   <p>
-    A partir da função, geramos um gráfico que evidencia como a produtividade evolui ao longo do tempo. Com ele, é possível visualizar:
+    A partir dessas funções, o gráfico evidencia como a produtividade evolui até o ponto de máximo e como o gasto 
+    energético aumenta continuamente. Essa representação permite visualizar:
   </p>
 
   <ul>
-    <li>o ponto de máximo desempenho;</li>
-    <li>quando o consumo energético deixa de compensar;</li>
-    <li>áreas de crescimento, estabilidade e queda;</li>
-    <li>efeitos de pequenas variações no processo.</li>
+    <li>o instante exato em que a produtividade atinge seu valor máximo (t = 12,5 horas);</li>
+    <li>quando o consumo energético passa a ser maior do que o ganho produtivo;</li>
+    <li>a área de crescimento, o pico de eficiência e a fase de queda da produção;</li>
+    <li>o comportamento exponencial da energia consumida ao longo do tempo.</li>
   </ul>
 
   <div class="box-destaque">
     <p>
-      O gráfico torna o comportamento do sistema mais claro e facilita decisões sustentáveis baseadas em dados.
+      Com o gráfico, torna-se evidente que prolongar a operação após o pico de 12,5 horas reduz a eficiência geral, 
+      já que o consumo energético cresce sem gerar aumento proporcional de produtividade.
     </p>
   </div>
 
-  <!-- Aqui você insere seu gráfico -->
-  <!-- <img src="./assets/imgs/seu-grafico.png" alt="Gráfico da função"> -->
+  <img src="../imgs/graficoDps.jpeg" alt="grafico da funcao" class="grafico">
 
   <h2>Por Que Isso Importa?</h2>
   <p>
-    Entender esse tipo de modelagem é essencial para quem deseja atuar em áreas como tecnologia, automação e análise de dados. 
-    Profissionais que dominam conceitos de eficiência conseguem prever cenários, otimizar recursos e tomar decisões mais inteligentes.
+    Compreender essa modelagem é fundamental para profissionais que pretendem atuar em tecnologia, engenharia, 
+    automação ou análise de dados. Saber identificar o ponto ideal de operação permite prever cenários, reduzir 
+    desperdícios, otimizar recursos e tomar decisões sustentáveis — alinhadas às práticas modernas de eficiência 
+    energética e responsabilidade ambiental.
   </p>
 </div>
 
-
-  </div>
 <br><br><br>
+
 </main>
+
 <script src="../js/verificaLogin2.js"></script>
 
 <footer class="footer">
