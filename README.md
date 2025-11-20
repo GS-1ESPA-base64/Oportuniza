@@ -150,6 +150,7 @@ OPORTUNIZA/
 - Campo que destaca automaticamente os candidatos mais qualificados.
 
 ### 4.6 Painel do Usuário
+- o sistema não conta com recursos avançados de login, basta digitar qualquer nome e email, não havendo necessidade de senhas.
 - Acessado clicando no ícone de perfil.
 - Exibe nome, candidaturas realizadas e botão de lixeira para remover inscrições.
 
@@ -162,7 +163,7 @@ OPORTUNIZA/
 - CSS3  
 - Flexbox  
 - CSS Grid  
-- blbioetac Sweet Alert para alertas estilizados
+- biblioteca Sweet Alert para alertas estilizados
 
 ### Back-end / Lógica Integrada
 - Biblioteca Chart.js (geração de gráficos dinâmicos com Javascript)
